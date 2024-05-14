@@ -1,0 +1,217 @@
+.home-image {
+    background-image: url('giostra1.jpg');
+    height: 450px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 184, 0);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.home-image h1 {
+    margin: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 184, 0);
+    min-width: 160px;
+    /*box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);*/
+    z-index: 1;
+    padding-top: 10px;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(255, 150, 0);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+body {
+    font-family: Inter;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffb800;
+    font-weight: bold;
+    font-size: 18px;
+    height: 80px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+}
+
+#logo {
+    margin-left: 20px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    padding: 15px;
+    color: #fff;
+    margin: 10px;
+}
+
+#riquadri {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+#riquadro1,
+#riquadro2,
+#riquadro3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    height: 100px;
+}
+
+#riquadro1 {
+    background-color: rgb(255, 184, 0);
+}
+
+#riquadro2 {
+    background-color: rgb(255, 211, 97);
+}
+
+#riquadro3 {
+    background-color: rgba(255, 184, 0, 0.30);
+}
+
+#sezione-notizie {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#articolo1,
+#articolo2 {
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+
+#articolo1 img,
+#articolo2 img {
+    width: 400px;
+    margin: 20px;
+}
+
+#articolo1 p,
+#articolo2 p {
+    margin-bottom: 20px;
+}
+
+#articolo1 {
+    justify-content: start;
+}
+
+#articolo1 div,
+#articolo2 div {
+    align-content: center;
+}
+
+#articolo2 {
+    justify-content: end;
+}
+
+#articolo1 h4,
+#articolo1 p {
+    width: 400px;
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
+#articolo2 h4,
+#articolo2 p {
+    text-align: end;
+    width: 400px;
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
+.cta {
+    text-align: center;
+}
+
+.cta a {
+    background-color: #ffeab3;
+    color: #000;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+#newsletter {
+    background-color: rgba(255, 184, 0, 0.2);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#email {
+    width: 300px;
+    border: 1px solid #fff;
+    height: 30px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+#cta-email {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#cta-email a {
+    background-color: #ffb800;
+    color: #000;
+    font-weight: 600;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('/Inter/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
