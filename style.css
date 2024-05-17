@@ -44,11 +44,13 @@ header#desktop {
 }
 
 .home-image h1 {
-    font-size: 40px;
+    font-size: 42px;
 }
 
 .home-image h2 {
-    font-size: 30px;
+    font-size: 36px;
+    color: rgb(171, 222, 233);
+    text-shadow: 1px 1px #fff;
 }
 
 #logo {
@@ -508,7 +510,7 @@ footer li {
 #check input {
     width: 18px;
     height: 18px;
-    margin: 0;
+    margin: 0 10px 0 0;
 }
 
 #check label {
@@ -534,7 +536,7 @@ footer li {
 }
 
 #form-vendita #select:hover {
-    background-color: rgb(104, 157, 200);
+    background-color: rgb(104, 157, 160);
     cursor: pointer;
 }
 
