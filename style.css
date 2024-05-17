@@ -793,22 +793,29 @@ footer li {
         display: none;
     }
 
-    #recensioni.blocco-recensione {
-        display: inline-block;
-        width: 320px;
-        height: 250px;
-    }
-
-    #recensioni {
+    #recensioni-wrapper {
         overflow-x: auto;
         scroll-behavior: smooth;
         -webkit-overflow-scrolling: touch;
     }
 
-    #recensioni::-webkit-scrollbar {
+    #recensioni-wrapper::-webkit-scrollbar {
         display: none;
     }
 
+    #recensioni {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        gap: 1rem;
+    }
+
+    .blocco-recensione {
+        flex: 0 0 auto;
+    }
+
+    .blocco-recensione:first-of-type {
+        margin-left: 600px;
+    }
 }
 
 @font-face {
