@@ -1,0 +1,57 @@
+.cartolina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    width: 350px;
+    background-color: #fefefe;
+    margin: 25px;
+    flex: 0 0 auto;
+    transition: 400ms;
+}
+
+#offerte {
+    display: flex;
+    margin: 0 0px 40px 0;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 1rem;
+}
+
+#offerte::-webkit-scrollbar {
+    display: none;
+}
+
+#marchi-partner {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+#marchi-partner div {
+    display: flex;
+    justify-content: space-around;
+}
+
+#recensioni {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.blocco-recensione div {
+    margin: 15px;
+}
+
+.blocco-recensione {
+    width: 20rem;
+    background-color: rgba(204, 204, 204, 0.3);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
