@@ -174,10 +174,10 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 540px;
+    height: 550px;
     width: 350px;
     background-color: #fefefe;
-    margin: 25px 50px;
+    margin: 25px;
     flex: 0 0 auto;
     transition: 400ms;
 }
@@ -362,16 +362,13 @@ footer a {
 footer h3 {
     color: #ccc;
     font-size: 20px;
-    text-align: start;
 }
 
 footer h4 {
-    text-align: start;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 footer p {
-    text-align: start;
     margin: 5px 0 20px 0;
 }
 
@@ -385,22 +382,25 @@ footer li {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 #container div {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    justify-content: center;
+    width: 25%;
+    height: 80%;
+    margin: 0 20px;
+    text-align: center;
+    align-items: center;
 }
 
 #container div div {
-    width: 100%;
+    width: 40%;
     flex-direction: row;
-}
-
-#container div div img {
-    padding: 10px 20px 0 0;
+    justify-content: space-around;
+    margin-top: 10px;
 }
 
 #container table {
@@ -409,19 +409,19 @@ footer li {
     width: 220px;
 }
 
-#container table td {
-    text-align: start;
+#container table td,
+#container table th {
     margin: 0;
-    padding: 0 0 0 10px;
+    text-align: center;
+    width: 110px;
+    height: 16px;
 }
 
 #container table tr:last-child td {
-    border-bottom: 1px solid #333;
+    border-bottom: none;
 }
 
 #container tr td:first-child {
-    text-align: start;
-    padding: 10px 10px 10px 0;
     border-right: 1px solid #ccc;
 }
 
@@ -448,19 +448,18 @@ footer li {
     width: 100%;
     align-items: center;
     margin: 0 0 40px 0;
-    background-color: #555;
+    background-color: rgba(230, 230, 230, 0.9);
 }
 
 #form-vendita input {
     height: 40px;
     margin: 6px;
-    width: 160px;
+    width: 170px;
     border-radius: 15px;
     border: 2px solid #333;
 }
 
 #form-vendita form {
-    background-color: rgba(230, 230, 230, 0.9);
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
@@ -475,7 +474,7 @@ footer li {
 }
 
 #form-vendita p {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 #link p {
@@ -498,6 +497,11 @@ footer li {
     margin: 20px 0 0 0;
 }
 
+#check #privacy {
+    width: 18px;
+    height: 18px;
+}
+
 #check input {
     width: 15px;
     height: 15px;
@@ -505,23 +509,23 @@ footer li {
 }
 
 #check label {
-    font-size: 12px;
+    font-size: 14px;
     margin: 0 0 0 10px;
 }
 
 #informativa {
     margin: 0 0 20px 0;
     padding: 0;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 #form-vendita #select {
     padding: 8px;
-    width: 150px;
+    width: 170px;
     margin: 10px;
     background-color: #555;
     color: #fff;
-    font-size: 16px;
+    font-size: 17px;
     border: 2px solid #333;
     border-radius: 15px;
 }
@@ -639,7 +643,7 @@ footer li {
     }
 
     #marchi-partner div {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
 
     #marchi-partner img {
@@ -768,6 +772,40 @@ footer li {
         display: flex;
         flex-direction: column;
     }
+
+    #policy p,
+    #policy ul {
+        margin: 0 0 20px 0;
+    }
+}
+
+#marchi-partner div {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+#marchi-partner div::-webkit-scrollbar {
+    display: none;
+}
+
+#recensioni.blocco-recensione {
+    display: inline-block;
+    width: 320px;
+    height: 250px;
+}
+
+#recensioni {
+    height: 290px;
+    margin-bottom: 3rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+#recensioni::-webkit-scrollbar {
+    display: none;
 }
 
 @font-face {
