@@ -288,15 +288,21 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 #filtri div {
     height: 100%;
-    width: 18%;
+    width: 15%;
+    margin: 0 20px;
     display: flex;
+    justify-content: center;
     align-items: center;
+}
+
+#filtri div:last-of-type {
+    width: 100px;
 }
 
 #filtri select,
@@ -310,8 +316,8 @@ body {
 }
 
 #filtri #search {
-    width: 8%;
-    height: 55%;
+    width: 100%;
+    height: 57%;
     background-color: #abdee9;
     justify-content: center;
     text-align: center;
@@ -635,11 +641,11 @@ footer li {
     }
 
     #filtri div input {
-        width: 60%;
+        width: 45%;
     }
 
     #filtri div select {
-        width: 62%;
+        width: 46%;
     }
 
     #filtro-ricerca #search {
