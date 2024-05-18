@@ -49,8 +49,7 @@ header#desktop {
 
 .home-image h2 {
     font-size: 36px;
-    color: rgb(171, 222, 233);
-    text-shadow: 1px 1px #fff;
+    color: #abdee9;
 }
 
 #logo {
@@ -185,7 +184,7 @@ li {
 }
 
 .cartolina:hover {
-    box-shadow: 0 8px 16px 0 #ccc;
+    box-shadow: 0 2px 26px 0 #689daa;
 }
 
 .cartolina img {
@@ -211,16 +210,16 @@ li {
 }
 
 .scopri-di-piu {
-    background-color: #444;
+    background-color: #abdee9;
     width: 40%;
-    color: #fff;
+    color: #000;
     padding: 10px 6px;
     margin: 10px 0 40px 0;
     transition: 300ms;
 }
 
 .scopri-di-piu:hover {
-    background-color: #222;
+    background-color: #689daa;
     cursor: pointer;
 }
 
@@ -313,16 +312,16 @@ body {
 #filtri #search {
     width: 8%;
     height: 55%;
-    background-color: #ddd;
+    background-color: #abdee9;
     justify-content: center;
     text-align: center;
     align-items: center;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 #filtri #search:hover {
-    background-color: #bbb;
+    background-color: #689daa;
     cursor: pointer;
 }
 
@@ -488,10 +487,11 @@ footer li {
     width: 100%;
     background: none;
     padding: 20px 0 0 0;
+    margin-bottom: 10px;
 }
 
 #form-vendita a {
-    color: rgb(104, 157, 170);
+    color: #abdee9;
 }
 
 #vendita div {
@@ -528,15 +528,15 @@ footer li {
     width: 170px;
     height: 40px;
     margin: 10px;
-    background-color: rgb(104, 157, 170);
-    color: #fff;
+    background-color: #abdee9;
+    color: #000;
     font-size: 17px;
     border: 2px solid #333;
     border-radius: 15px;
 }
 
 #form-vendita #select:hover {
-    background-color: rgb(104, 157, 160);
+    background-color: #689daa;
     cursor: pointer;
 }
 
@@ -613,11 +613,11 @@ footer li {
     }
 
     .cartolina:first-of-type {
-        margin-left: 15%;
+        margin-left: 30px;
     }
 
     .cartolina:last-of-type {
-        margin-right: 14%;
+        margin-right: 30px;
     }
 
     .cartolina:hover {
@@ -656,23 +656,19 @@ footer li {
         margin: 30px;
     }
 
-    #form-vendita h3 {
-        width: 100%
+    #form-vendita #titolo-form {
+        font-size: 35px;
+        width: 100%;
     }
 
     #form-vendita form {
         margin-bottom: 30px;
     }
 
-    #form-vendita form,
-    #form-vendita p {
+    #form-vendita form{
         width: 90%;
         padding-right: 10px;
         padding-left: 10px;
-    }
-
-    #vendita input {
-        width: 40%;
     }
 
     #vendita select {
@@ -685,10 +681,6 @@ footer li {
 
     form button#select {
         width: 100%;
-    }
-
-    .blocco-recensione {
-        margin: 15px;
     }
 
     #servizi {
@@ -708,7 +700,7 @@ footer li {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        width: 100%;
+        width: 80%;
         height: 20vh;
         margin: 10px;
         align-items: center;
@@ -793,28 +785,34 @@ footer li {
         display: none;
     }
 
-    #recensioni-wrapper {
-        overflow-x: auto;
-        scroll-behavior: smooth;
-        -webkit-overflow-scrolling: touch;
-    }
-
     #recensioni-wrapper::-webkit-scrollbar {
         display: none;
     }
 
+    #recensioni-wrapper {
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        max-width: 100%;
+    }
+    
     #recensioni {
-        display: inline-flex;
+        display: flex;
         flex-wrap: nowrap;
         gap: 1rem;
+        width: max-content;
     }
-
+    
     .blocco-recensione {
         flex: 0 0 auto;
     }
 
     .blocco-recensione:first-of-type {
-        margin-left: 600px;
+        margin-left: 30px;
+    }
+
+    .blocco-recensione:last-of-type {
+        margin-right: 30px;
     }
 }
 
